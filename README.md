@@ -19,6 +19,6 @@ The default display shows the first 20 creature cards returned from the API and 
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-If looking to run this app locally, first clone the repository, run `yarn`, then run `yarn start` <br/>
+If looking to run this app locally, first clone the repository, cd into the repo, run `yarn`, then run `yarn start` <br/>
 This runs the app in the development mode.<br>
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
