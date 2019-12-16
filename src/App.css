@@ -81,7 +81,7 @@ img {
 /*  ------- ANIMATION FOR CARD SLIDE ------- */
 #slide {
   position: relative;
-  left: -1100px;
+  left: -2100px;
   -webkit-animation: slide 0.5s forwards;
   -webkit-animation-delay: 2s;
   animation: slide 0.5s forwards;
