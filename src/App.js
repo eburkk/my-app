@@ -90,7 +90,6 @@ function App() {
                 <div className="searchComponent">
                   <SearchDropdown params={params} />
                   <CardSearchBar updateUserInput={updateUserInput} />
-                  {console.log(filteredData)}
                 </div>
                 {error && (
                   <Alert

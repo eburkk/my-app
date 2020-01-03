@@ -1,9 +1,9 @@
 /* Contruscts the overall layout of card display
     - 20 cards on initial page
-    -slide in from left to right
+    - slide in from left to right
     - infinity scroll
 */
-import React, { useEffect, useState } from "react";
+import React from "react";
 import { SingleCard } from "./SingleCard";
 import { NumLoadedResults } from "./NumLoadedResults";
 import "semantic-ui-css/semantic.min.css";
@@ -13,8 +13,7 @@ export const CardLayout = ({
   filteredData,
   loading,
   params,
-  userInput,
-  searching
+  userInput
 }) => {
   return (
     <div>
