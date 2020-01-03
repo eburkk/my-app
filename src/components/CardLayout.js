@@ -16,7 +16,6 @@ export const CardLayout = ({
   userInput,
   searching
 }) => {
-  
   return (
     <div>
       <div className="numResults">

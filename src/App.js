@@ -6,33 +6,33 @@ import { CardSearchBar } from "./components/CardSearchBar";
 import { Icon } from "fundamental-react/Icon";
 import { SearchDropdown } from "./components/SearchDropdown";
 import { useRoute } from "wouter";
-import FuzzySearch from 'fuzzy-search';
+import FuzzySearch from "fuzzy-search";
 import "./App.css";
 
 // Creates searcher depending on what user wants to sort by
 function createSearcher(params, creatureCards) {
   const allSearcher = new FuzzySearch(creatureCards.cards, [
-    'name',
-    'artist',
-    'setName'
+    "name",
+    "artist",
+    "setName"
   ]);
 
   if (!params) {
     return allSearcher;
   } else {
     switch (params.selectedSearch) {
-      case 'cardName': {
-        const cardNameSearcher = new FuzzySearch(creatureCards.cards, ['name']);
+      case "cardName": {
+        const cardNameSearcher = new FuzzySearch(creatureCards.cards, ["name"]);
         return cardNameSearcher;
       }
-      case 'set': {
+      case "set": {
         const setNameSearcher = new FuzzySearch(creatureCards.cards, [
-          'setName'
+          "setName"
         ]);
         return setNameSearcher;
       }
-      case 'artist': {
-        const artistSearcher = new FuzzySearch(creatureCards.cards, ['artist']);
+      case "artist": {
+        const artistSearcher = new FuzzySearch(creatureCards.cards, ["artist"]);
         return artistSearcher;
       }
       default:
@@ -40,7 +40,6 @@ function createSearcher(params, creatureCards) {
     }
   }
 }
-
 
 function App() {
   const [userInput, updateUserInput] = useState("");
@@ -51,10 +50,9 @@ function App() {
   let filteredData = [];
   const pageNum = 1;
 
-  // Allows pagination 
-  const magicTheGatheringCardsAPI = 
-  `https://api.magicthegathering.io/v1/cards?
-      type=creature&pageSize=20?page=${pageNum}&orderBy=name`;
+  // Allows pagination
+  const magicTheGatheringCardsAPI = `https://api.magicthegathering.io/v1/cards?
+      type=creature&pageSize=20&page=${pageNum}&orderBy=name`;
 
   // Fetches initial 20 creature cards
   useEffect(() => {

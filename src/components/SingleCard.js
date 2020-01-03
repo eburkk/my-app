@@ -11,11 +11,18 @@ import "../App.css";
 export const SingleCard = ({ card }) => {
   return (
     <li id="slide" className="card">
-      <img src={card.imageUrl} alt="No Image Available" height="231" width="310"/>
+      <img
+        src={card.imageUrl}
+        alt="No Image Available"
+        height="231"
+        width="310"
+      />
       <div className="cardHeader">{card.name}</div>
       <div>{card.artist}</div>
       <div>{card.setName}</div>
-      <div>{(card.originalType && !card.type) || (!card.orginalType && card.type)}</div>
+      <div>
+        {(card.originalType && !card.type) || (!card.orginalType && card.type)}
+      </div>
     </li>
   );
 };

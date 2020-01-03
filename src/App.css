@@ -54,12 +54,12 @@
   overflow-x: hidden;
   size: a3;
   min-width: 0px;
-  transform: scale(.85);
+  transform: scale(0.85);
   border: double;
-  font-family: Lato,'Helvetica Neue',Arial,Helvetica,sans-serif;
+  font-family: Lato, "Helvetica Neue", Arial, Helvetica, sans-serif;
   font-size: 14px;
   line-height: 1.4285em;
-  color: rgba(0,0,0,.87);
+  color: rgba(0, 0, 0, 0.87);
   min-inline-size: fit-content;
   max-width: 250px;
   align-self: auto;
@@ -67,8 +67,8 @@
   flex-grow: 1;
   vertical-align: middle;
   display: inline;
-  float: right;
 }
+
 img {
   line-height: inherit;
   vertical-align: middle;
@@ -89,11 +89,15 @@ img {
 }
 
 @-webkit-keyframes slide {
-  100% { left: 0; }
+  100% {
+    left: 0;
+  }
 }
 
 @keyframes slide {
-  100% { left: 0; }
+  100% {
+    left: 0;
+  }
 }
 
 /* ------------ LOADING SPINNER ------------- */
@@ -132,7 +136,6 @@ img {
 .packageButton {
   height: auto;
   max-height: unset;
-  
 }
 
 .fd-popover__popper {
@@ -187,7 +190,7 @@ input {
 .oc-search-bar {
   width: 100%;
   height: 34px;
-  border: 1px solid transparent!important;
+  border: 1px solid transparent !important;
   margin-top: -4px;
 }
 
@@ -201,7 +204,7 @@ input {
 .oc-search-bar .input-group-btn {
   width: 32px;
   display: contents;
-  font-size:x-small;
+  font-size: x-small;
 }
 
 .oc-search-bar .input-group .form-control {
@@ -217,7 +220,7 @@ button#search-button:focus {
 /* ------ SEARCH COMPONENTS ------*/
 .searchComponent {
   display: flex;
-  width:fit-content;
+  width: fit-content;
   margin: 20px;
   align-items: center;
 }
@@ -227,8 +230,6 @@ button#search-button:focus {
   text-align: left;
   font-size: initial;
 }
-
-
 
 /*<div class="tile-inner-padded tile-grid-item-inner">
         <div id="slide" className="card">
